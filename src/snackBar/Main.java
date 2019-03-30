@@ -20,6 +20,11 @@ public class Main{
 
         // Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.
         System.out.println("Customer " + c1.getName() + " starting cash is: " + c1.getCash() );
+        System.out.println("Soda quantity: " + s4.getQuantity() + "\n");
+        // System.out.println(c1.buySnack(s4, 3));
+        c1.buySnack(s4, 3);
+        System.out.println("Customer " + c1.getName() + " starting cash is: " + c1.getCash() );
+        System.out.println("Soda quantity: " + s4.getQuantity() + "\n");
         // System.out.println(c1.getCash());
     }
     // Processing

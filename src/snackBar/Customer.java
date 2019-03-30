@@ -39,8 +39,9 @@ public class Customer{
         this.cash += cash;
     }
 
-    public void buySnack(double totCash)
+    public void buySnack(Snack snack, int quantity)
     {
-        this.cash -= totCash;
+        snack.buySnack(quantity);
+        this.cash -= snack.getTotCost(quantity);
     }
 }
