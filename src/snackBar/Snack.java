@@ -37,6 +37,11 @@ public class Snack{
         this.name = name;
     }
 
+    public String getName()
+    {
+        return this.name;
+    }
+
     public void buySnack(int quantity)
     {
         if (quantity > 0) {

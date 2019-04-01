@@ -19,13 +19,19 @@ public class Main{
         System.out.println("*** Processing Snacking Data ***");
 
         // Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.
-        System.out.println("Customer " + c1.getName() + " starting cash is: " + c1.getCash() );
-        System.out.println("Soda quantity: " + s4.getQuantity() + "\n");
-        // System.out.println(c1.buySnack(s4, 3));
+        System.out.println("Customer " + c1.getName() + " starting cash is: " + c1.getCash() + "\n" + "Soda quantity: " + s4.getQuantity() + "\n");
         c1.buySnack(s4, 3);
-        System.out.println("Customer " + c1.getName() + " starting cash is: " + c1.getCash() );
-        System.out.println("Soda quantity: " + s4.getQuantity() + "\n");
-        // System.out.println(c1.getCash());
+        System.out.println("Customer " + c1.getName() + " cash remaining is: " + c1.getCash() + "\n" + "Soda quantity: " + s4.getQuantity() + "\n");
+
+        // Customer 1 buys 1 of snack 3. Print Customer 1 Cash on hand. Print quantity of snack 3.
+        System.out.println("Customer " + c1.getName() + " starting cash is: " + c1.getCash() + "\n" + s3.getName() + " quantity: " + s3.getQuantity() + "\n");
+        c1.buySnack(s3, 1);
+        System.out.println("Customer " + c1.getName() + " cash remaining is: " + c1.getCash() + "\n" + s3.getName() + " quantity: " + s3.getQuantity() + "\n");
+        
+        // Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.
+        System.out.println("Customer " + c2.getName() + " starting cash is: " + c2.getCash() + "\n" + s4.getName() + " quantity: " + s4.getQuantity() + "\n");
+        c2.buySnack(s4, 2);
+        System.out.println("Customer " + c2.getName() + " cash remaining is: " + c2.getCash() + "\n" + s4.getName() + " quantity: " + s4.getQuantity() + "\n");
     }
     // Processing
 
