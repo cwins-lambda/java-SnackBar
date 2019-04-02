@@ -42,6 +42,16 @@ public class Main{
         System.out.println("Customer " + c1.getName() + " starting cash is: " + c1.getCash() + "\n" + s2.getName() + " quantity: " + s2.getQuantity() + "\n");
         c1.buySnack(s2, 1);
         System.out.println("Customer " + c1.getName() + " cash remaining is: " + c1.getCash() + "\n" + s2.getName() + " quantity: " + s2.getQuantity() + "\n");
+
+        // Snack 3 gets 12 more. Print quantity of snack 3.
+        System.out.println(s3.getName() + " quantity: " + s3.getQuantity() + "\n");
+        s3.addQuantity(12);
+        System.out.println(s3.getName() +  " quantity: " + s3.getQuantity() + "\n");
+
+        // Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.
+        System.out.println("Customer " + c2.getName() + " starting cash is: " + c2.getCash() + "\n" + s3.getName() + " quantity: " + s3.getQuantity() + "\n");
+        c2.buySnack(s3, 3);
+        System.out.println("Customer " + c2.getName() + " cash remaining is: " + c2.getCash() + "\n" + s3.getName() + " quantity: " + s3.getQuantity() + "\n");
     }
     // Processing
 
