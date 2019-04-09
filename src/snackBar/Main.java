@@ -53,15 +53,7 @@ public class Main{
         c2.buySnack(s3, 3);
         System.out.println("Customer " + c2.getName() + " cash remaining is: " + c2.getCash() + "\n" + s3.getName() + " quantity: " + s3.getQuantity() + "\n");
     }
-    // Processing
-
-    // Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.
-    // Customer 1 buys 1 of snack 3. Print Customer 1 Cash on hand. Print quantity of snack 3.
-    // Customer 2 buys 2 of snack 4. Print Customer 2 Cash on Hand. Print quantity of snack 4.
-    // Customer 1 finds $10. Print Customer 1 Cash on Hand.
-    // Customer 1 buys 1 of snack 2. Print Customer 1 Cash on Hand. Print quantity of snack 2.
-    // Snack 3 gets 12 more. Print quantity of snack 3.
-    // Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.
+ 
 
     public static void main(String[] args)
     {
