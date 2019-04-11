@@ -16,6 +16,7 @@ public class Main{
         Snack s4 = new Snack("Soda ", 24, 2.50, v2.getId());
         Snack s5 = new Snack("Water ", 20, 2.75, v2.getId());
 
+        // print outs
         System.out.println("*** Processing Snacking Data ***");
 
         // Customer 1 buys 3 of snack 4. Print Customer 1 Cash on hand. Print quantity of snack 4.
